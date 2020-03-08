@@ -1,0 +1,292 @@
+:root {
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1100px;
+}
+
+.category {
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background: var(--dark-color);
+}
+
+a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .55rem;
+    line-height: 1.3;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/* Navbar */
+
+.main-nav {
+    background: rgb(197, 193, 193);     /* rgb(110, 110, 110);*/
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    padding: 1rem;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+
+ul {
+    justify-self: end;
+    display: flex;
+}
+
+ul li a {
+    padding: 0.75rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+ul li a.current {
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+ul li a.current:hover {
+    background: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 2px;
+}
+
+/*   redes sociales navbar  */
+
+.redes-navbar i {
+    color: #2b2929;
+    margin-right: 0.5rem;
+}
+
+.redes-navbar i:hover {
+    color: var(--light-color);
+}
+
+/* Header Showcase*/
+
+.header {
+    color: #fff;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.header:before {
+    content: '';
+    background: url('../img/featured.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.showcase-container {
+    display: grid;
+    grid-template-columns: 600px 1fr*/
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.showcase-content {
+    z-index: 1;
+}
+/*Texto del header*/
+.category-sports {
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    background: var(--dark-color);
+}
+
+.category-sports p {
+line-height: 1.7;
+margin-bottom: 1rem;
+margin-top: 1.5rem;
+text-align: justify;
+
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: var(--primary-color);
+    margin: 2rem 6rem;
+    padding: 0.60rem;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* HOME ARTICLES*/
+
+.card {
+    background: rgb(94, 92, 92);
+    padding: 11px;
+}
+
+.articles-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.articles-container > *:first-child,
+.articles-container > *:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    grid-gap: 1rem;
+    grid-column: 1 / span 2; /* esto hace que la foto y el texto se expandan 2 columnas horizontales*/
+    
+}
+
+.articles-container > *:last-child {
+    grid-column: 2 / span 2;
+}
+
+/*Márgenes y estilos de los artículos*/
+
+.card p {
+    padding: 10px;
+    
+}
+
+.category, h3 {
+    text-align: center;
+}
+
+.category {
+    font-size: 1.7rem;
+    
+}
+
+.heading-articles {
+    margin: 2rem 2rem 2rem 5.3rem;
+    font-size: 3rem;
+}
+
+.home-articles {
+    margin-bottom: 7rem;
+}
+
+/* FOOTER */
+
+.main-footer {
+    background: #0f0f0f;
+    color: #fff;
+    padding: 3rem;
+}
+
+.main-footer img {
+    width: 150px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.footer-container p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.heading-h3 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    padding: 7px;
+    margin-top: 13px;
+}
+
+.ul-footer {
+    display: block;
+    text-align: center;
+}
+
+.ul-footer li {
+    ;
+    border-bottom: 1px solid #1b1b1b;
+    padding: 1rem;
+}
+
+ul li a {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.rights {
+    grid-column: 1 / span 4;
+    background-color: #1b1b1b;
+}
+
+.li-footer {
+    margin-bottom: 1.8rem;
+}
+
+
