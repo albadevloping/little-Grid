@@ -1,5 +1,5 @@
 # little-Grid
-## A practice of my online course
+
 
 ## Finish result :eyes: 
 
